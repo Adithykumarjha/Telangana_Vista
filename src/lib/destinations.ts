@@ -139,7 +139,7 @@ export const telanganaDestinations: Destination[] = [
     slug: "pakhal-lake",
     name: { en: "Pakhal Lake", te: "పాకాల సరస్సు" },
     description: { en: "A man-made lake situated in the Pakhal Wildlife Sanctuary, surrounded by lush forests.", te: "పాకాల వన్యప్రాణుల అభయారణ్యంలో ఉన్న ఒక మానవ నిర్మిత సరస్సు, పచ్చని అడవులతో చుట్టుముట్టబడి ఉంది." },
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1629378343801-abfbcaca500d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8UGFraGFsJTIwTGFrZXxlbnwwfHx8fDE3NTM2MDM5Njd8MA&ixlib=rb-4.1.0&q=80&w=1080",
     dataAiHint: "serene lake",
     regionTags: ["Telangana", "Warangal"],
     historicalSignificance: { en: "Built by the Kakatiya king Ganapati Deva in 1213 AD, it's an example of ancient engineering.", te: "1213 ADలో కాకతీయ రాజు గణపతి దేవునిచే నిర్మించబడింది, ఇది ప్రాచీన ఇంజనీరింగ్‌కు ఒక ఉదాహరణ." },
