@@ -43,7 +43,7 @@ export const telanganaDestinations: Destination[] = [
     slug: "golconda-fort",
     name: { en: "Golconda Fort", te: "గోల్కొండ కోట" },
     description: { en: "A magnificent fortress complex known for its acoustics and grandeur.", te: "ధ్వనిశాస్త్రం మరియు వైభవానికి ప్రసిద్ధి చెందిన అద్భుతమైన కోట సముదాయం." },
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1575492534537-792e4e1b8bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxGb3J0fGVufDB8fHx8MTc1MzYwMzU0NHww&ixlib=rb-4.1.0&q=80&w=1080",
     dataAiHint: "golconda fort",
     regionTags: ["Telangana", "Hyderabad"],
     historicalSignificance: { en: "Originally a mud fort, it was rebuilt by the Qutb Shahi dynasty and was a famous diamond market.", te: "వాస్తవానికి మట్టి కోట, ఇది కుతుబ్ షాహీ రాజవంశంచే పునర్నిర్మించబడింది మరియు ప్రసిద్ధ వజ్రాల మార్కెట్‌గా ఉంది." },
