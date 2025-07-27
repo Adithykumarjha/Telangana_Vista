@@ -75,7 +75,7 @@ export const telanganaDestinations: Destination[] = [
     slug: "ramoji-film-city",
     name: { en: "Ramoji Film City", te: "రామోజీ ఫిల్మ్ సిటీ" },
     description: { en: "The world's largest integrated film city and a popular tourism and recreation center.", te: "ప్రపంచంలోనే అతిపెద్ద ఇంటిగ్రేటెడ్ ఫిల్మ్ సిటీ మరియు ఒక ప్రసిద్ధ పర్యాటక మరియు వినోద కేంద్రం." },
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1598610339755-6e4e24737a27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxSYW1vamklMjBmaWxtJTIwY2l0eXxlbnwwfHx8fDE3NTM1NDkyNzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
     dataAiHint: "film city",
     regionTags: ["Telangana", "Hyderabad"],
     historicalSignificance: { en: "Opened in 1996, it has been certified by Guinness World Records as the largest studio complex in the world.", te: "1996లో ప్రారంభించబడింది, ఇది ప్రపంచంలోనే అతిపెద్ద స్టూడియో కాంప్లెక్స్‌గా గిన్నిస్ వరల్డ్ రికార్డ్స్ ద్వారా ధృవీకరించబడింది." },
