@@ -1,8 +1,6 @@
 'use client';
 
-import { useParams } from 'next/navigation';
 import Image from 'next/image';
-import { getDestinationBySlug } from '@/lib/destinations';
 import { useLanguage } from '@/contexts/LanguageContext';
 import {
   Accordion,
@@ -15,6 +13,7 @@ import { Car, Utensils, Clock, Hotel, Lightbulb, Ticket, UserCircle2 } from 'luc
 import { getStoriesForDestination, Story } from '@/lib/stories';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { useEffect, useState } from 'react';
+import { Destination } from '@/lib/destinations';
 
 
 function RecentStories({ destinationId }: { destinationId: string }) {
@@ -57,9 +56,7 @@ function RecentStories({ destinationId }: { destinationId: string }) {
   );
 }
 
-
-export default function DestinationDetailClient({ slug }: { slug: string }) {
-  const destination = getDestinationBySlug(slug);
+export default function DestinationDetailClient({ destination }: { destination: Destination }) {
   const { language } = useLanguage();
   const [isMounted, setIsMounted] = useState(false);
 
