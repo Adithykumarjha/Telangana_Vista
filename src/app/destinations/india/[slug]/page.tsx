@@ -11,7 +11,45 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { Card, CardContent } from '@/components/ui/card';
-import { Car, Utensils, Clock, Hotel, Lightbulb, Ticket } from 'lucide-react';
+import { Car, Utensils, Clock, Hotel, Lightbulb, Ticket, UserCircle2 } from 'lucide-react';
+import { getStoriesForDestination, Story } from '@/lib/stories';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+
+
+function RecentStories({ destinationId }: { destinationId: string }) {
+  const stories = getStoriesForDestination(destinationId);
+
+  if (stories.length === 0) {
+    return null;
+  }
+
+  return (
+    <div className="mt-8">
+      <h2 className="text-2xl font-headline font-bold mb-4">Recent Stories</h2>
+      <div className="space-y-6">
+        {stories.map((story) => (
+          <Card key={story.id}>
+             <CardContent className="p-6 flex gap-6">
+                <Avatar className="h-16 w-16 hidden sm:flex">
+                  {story.photo ? (
+                    <AvatarImage src={story.photo} alt={story.name} data-ai-hint={story.photoHint} />
+                  ) : (
+                    <UserCircle2 className="h-16 w-16 text-muted-foreground" />
+                  )}
+                  <AvatarFallback>{story.name.charAt(0)}</AvatarFallback>
+                </Avatar>
+               <div className="flex-1">
+                 <h3 className="font-bold font-headline text-lg">{story.name}</h3>
+                 <p className="text-muted-foreground mt-2 text-base">{story.story}</p>
+               </div>
+             </CardContent>
+          </Card>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 
 export default function IndiaDestinationPage() {
   const params = useParams();
@@ -102,6 +140,8 @@ export default function IndiaDestinationPage() {
               </div>
             </div>
           )}
+          
+          <RecentStories destinationId={destination.id} />
         </CardContent>
       </Card>
     </div>

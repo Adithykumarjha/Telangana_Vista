@@ -1,5 +1,6 @@
 'use client';
 
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -26,17 +27,21 @@ import {
 import { useToast } from '@/hooks/use-toast';
 import { allDestinations, Destination } from '@/lib/destinations';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { addStory } from '@/lib/stories';
+import { Loader2 } from 'lucide-react';
+
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
   destination: z.string({ required_error: 'Please select a destination.' }),
-  description: z.string().min(10, { message: 'Description must be at least 10 characters.' }).max(500, { message: 'Description must be less than 500 characters.' }),
+  description: z.string().min(10, { message: 'Description must be at least 10 characters.' }).max(1000, { message: 'Description must be less than 1000 characters.' }),
   photo: z.any().optional(),
 });
 
 export default function SubmitExperienceForm() {
   const { toast } = useToast();
   const { language } = useLanguage();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -46,11 +51,23 @@ export default function SubmitExperienceForm() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmitting(true);
+    
+    // In a real app, you would upload the photo to a storage service.
+    // Here, we'll just simulate it.
+    await new Promise(resolve => setTimeout(resolve, 1500));
+
+    addStory({
+      destinationId: values.destination,
+      name: values.name,
+      story: values.description,
+    });
+    
+    setIsSubmitting(false);
     toast({
       title: 'Submission Successful!',
-      description: 'Thank you for sharing your experience.',
+      description: 'Thank you for sharing your experience. Your story is now live!',
       variant: 'default',
     });
     form.reset();
@@ -125,11 +142,17 @@ export default function SubmitExperienceForm() {
               <FormControl>
                 <Input type="file" accept="image/*" {...form.register('photo')} />
               </FormControl>
+              <FormDescription>
+                Your photo will appear alongside your story.
+              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button type="submit" className="bg-accent hover:bg-accent/90 text-accent-foreground">Submit Experience</Button>
+        <Button type="submit" className="bg-accent hover:bg-accent/90 text-accent-foreground w-full" disabled={isSubmitting}>
+           {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+           {isSubmitting ? 'Submitting...' : 'Submit Experience'}
+        </Button>
       </form>
     </Form>
   );
