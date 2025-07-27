@@ -20,7 +20,6 @@ function RecentStories({ destinationId }: { destinationId: string }) {
   const [stories, setStories] = useState<Story[]>([]);
 
   useEffect(() => {
-    // This will run on the client after hydration, ensuring stories are fresh
     setStories(getStoriesForDestination(destinationId));
   }, [destinationId]);
 
