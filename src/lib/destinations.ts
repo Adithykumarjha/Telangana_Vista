@@ -59,7 +59,7 @@ export const telanganaDestinations: Destination[] = [
     slug: "husain-sagar-lake",
     name: { en: "Hussain Sagar Lake", te: "హుస్సేన్ సాగర్ సరస్సు" },
     description: { en: "A heart-shaped lake with a large monolithic statue of the a Buddha in its center.", te: "మధ్యలో గౌతమ బుద్ధుని పెద్ద ఏకశిలా విగ్రహంతో ఉన్న హృదయాకార సరస్సు." },
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1712422813106-dfb845a8a7ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxIdXNzYWluJTIwU2FnYXIlMjBMYWtlfGVufDB8fHx8MTc1MzYwMzY0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
     dataAiHint: "hussain sagar",
     regionTags: ["Telangana", "Hyderabad"],
     historicalSignificance: { en: "Built in 1563 by Ibrahim Quli Qutb Shah, it is an artificial lake fed by the River Musi.", te: "1563లో ఇబ్రహీం కులీ కుతుబ్ షాచే నిర్మించబడినది, ఇది మూసీ నది ద్వారా నీరు అందించబడే ఒక కృత్రిమ సరస్సు." },
