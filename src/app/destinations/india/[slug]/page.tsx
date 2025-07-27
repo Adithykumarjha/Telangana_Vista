@@ -11,6 +11,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { Card, CardContent } from '@/components/ui/card';
+import { Car, Utensils, Clock, Hotel, Lightbulb, Ticket } from 'lucide-react';
 
 export default function IndiaDestinationPage() {
   const params = useParams();
@@ -41,18 +42,18 @@ export default function IndiaDestinationPage() {
           <Accordion type="single" collapsible className="w-full" defaultValue="item-1">
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-headline text-xl">Historical Significance</AccordionTrigger>
-              <AccordionContent className="text-base">
+              <AccordionContent className="text-base whitespace-pre-line">
                 {destination.historicalSignificance[language]}
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger className="font-headline text-xl">Best Time to Visit</AccordionTrigger>
+              <AccordionTrigger className="font-headline text-xl flex items-center gap-2"><Clock size={20}/>Best Time to Visit</AccordionTrigger>
               <AccordionContent className="text-base">
                 {destination.bestTimeToVisit[language]}
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger className="font-headline text-xl">Local Cuisine</AccordionTrigger>
+              <AccordionTrigger className="font-headline text-xl flex items-center gap-2"><Utensils size={20}/>Local Cuisine</AccordionTrigger>
               <AccordionContent className="text-base">
                 {destination.localCuisine[language]}
               </AccordionContent>
@@ -61,6 +62,30 @@ export default function IndiaDestinationPage() {
               <AccordionTrigger className="font-headline text-xl">Cultural Events</AccordionTrigger>
               <AccordionContent className="text-base">
                 {destination.culturalEvents[language]}
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5">
+              <AccordionTrigger className="font-headline text-xl flex items-center gap-2"><Car size={20}/>Transportation</AccordionTrigger>
+              <AccordionContent className="text-base">
+                {destination.transportation[language]}
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-6">
+              <AccordionTrigger className="font-headline text-xl flex items-center gap-2"><Hotel size={20}/>Accommodation</AccordionTrigger>
+              <AccordionContent className="text-base">
+                {destination.accommodation[language]}
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-7">
+              <AccordionTrigger className="font-headline text-xl flex items-center gap-2"><Ticket size={20}/>Attraction Details</AccordionTrigger>
+              <AccordionContent className="text-base">
+                {destination.attractionDetails[language]}
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-8">
+              <AccordionTrigger className="font-headline text-xl flex items-center gap-2"><Lightbulb size={20}/>Insider Tips</AccordionTrigger>
+              <AccordionContent className="text-base">
+                {destination.insiderTips[language]}
               </AccordionContent>
             </AccordionItem>
           </Accordion>
