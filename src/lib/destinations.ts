@@ -171,7 +171,7 @@ export const telanganaDestinations: Destination[] = [
     slug: "pochampally",
     name: { en: "Pochampally", te: "పోచంపల్లి" },
     description: { en: "A town famous for its traditional Ikat sarees, recognized as a World Craft Village.", te: "ప్రపంచ క్రాఫ్ట్ విలేజ్‌గా గుర్తింపు పొందిన, దాని సాంప్రదాయ ఇక్కత్ చీరలకు ప్రసిద్ధి చెందిన పట్టణం." },
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1695150110878-a76e59db0b90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb2NoYW1wYWxseSUyMHZpbGxhZ2V8ZW58MHx8fHwxNzUzNjA0MTg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
     dataAiHint: "textile weaving",
     regionTags: ["Telangana", "Yadadri Bhuvanagiri"],
     historicalSignificance: { en: "The unique Ikat weaving tradition has been passed down for generations. The Bhoodan movement was also launched here.", te: "ప్రత్యేకమైన ఇక్కత్ నేత సంప్రదాయం తరతరాలుగా వస్తోంది. భూదాన్ ఉద్యమం కూడా ఇక్కడే ప్రారంభించబడింది." },
