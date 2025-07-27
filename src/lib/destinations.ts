@@ -27,7 +27,7 @@ export const telanganaDestinations: Destination[] = [
     slug: "charminar",
     name: { en: "Charminar", te: "చార్మినార్" },
     description: { en: "A historic monument and mosque in Hyderabad, an icon of the city.", te: "హైదరాబాద్‌లోని ఒక చారిత్రాత్మక స్మారక చిహ్నం మరియు మసీదు, నగరానికి ఒక చిహ్నం." },
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1441911645956-df6e9bbc5496?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaGFybWluYXJ8ZW58MHx8fHwxNzUzNTQ4MDU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     dataAiHint: "charminar hyderabad",
     regionTags: ["Telangana", "Hyderabad"],
     historicalSignificance: { en: "Built in 1591 by Muhammad Quli Qutb Shah, it is a symbol of Hyderabad's rich past.", te: "1591లో ముహమ్మద్ కులీ కుతుబ్ షాచే నిర్మించబడినది, ఇది హైదరాబాద్ యొక్క గొప్ప గతానికి చిహ్నం." },
