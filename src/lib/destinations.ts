@@ -283,7 +283,7 @@ export const telanganaDestinations: Destination[] = [
     slug: "suryapet",
     name: { en: "Suryapet", te: "సూర్యాపేట" },
     description: { en: "Known as the 'Gateway of Telangana', it is a region with historical temples and sites.", te: "'తెలంగాణ ముఖద్వారం'గా పిలువబడే ఇది, చారిత్రక దేవాలయాలు మరియు ప్రదేశాలు ఉన్న ప్రాంతం." },
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1723005618130-ad8c79bb4c97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdXJ5YXBldHxlbnwwfHx8fDE3NTM2MDQ4NjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
     dataAiHint: "historic town",
     regionTags: ["Telangana", "Suryapet"],
     historicalSignificance: { en: "The region has a rich history with evidence of Neolithic and Megalithic culture.", te: "ఈ ప్రాంతానికి నవీన శిలా మరియు బృహత్ శిలా సంస్కృతికి ఆధారాలున్న గొప్ప చరిత్ర ఉంది." },
