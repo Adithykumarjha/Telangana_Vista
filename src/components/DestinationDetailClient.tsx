@@ -71,11 +71,6 @@ export default function DestinationDetailClient({ slug }: { slug: string }) {
     return <div>Destination not found</div>;
   }
 
-  // Prevent hydration mismatch by only rendering RecentStories on the client
-  if (!isMounted) {
-    return null; 
-  }
-
   return (
     <div className="max-w-4xl mx-auto">
       <Card className="overflow-hidden">
@@ -163,8 +158,8 @@ export default function DestinationDetailClient({ slug }: { slug: string }) {
               </div>
             </div>
           )}
-
-          <RecentStories destinationId={destination.id} />
+          
+          {isMounted && <RecentStories destinationId={destination.id} />}
 
         </CardContent>
       </Card>
