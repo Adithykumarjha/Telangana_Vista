@@ -65,7 +65,7 @@ export default function DestinationDetailClient({ destination }: { destination: 
   }, []);
 
   if (!destination) {
-    return <div>Destination not found</div>;
+    return <div>Loading...</div>;
   }
 
   return (
